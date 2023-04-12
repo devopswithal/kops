@@ -1,0 +1,75 @@
+Assets:
+  amd64:
+  - 992d6298bd494b65f54c838419773c4976aca72dfb36271c613537efae7ab7d2@https://storage.googleapis.com/kubernetes-release/release/v1.26.3/bin/linux/amd64/kubelet
+  - 026c8412d373064ab0359ed0d1a25c975e9ce803a093d76c8b30c5996ad73e75@https://storage.googleapis.com/kubernetes-release/release/v1.26.3/bin/linux/amd64/kubectl
+  - 962100bbc4baeaaa5748cdbfce941f756b1531c2eadb290129401498bfac21e7@https://storage.googleapis.com/k8s-artifacts-cni/release/v0.9.1/cni-plugins-linux-amd64-v0.9.1.tgz
+  - c4e516376a2392520a87abea94baf2045cc3a67e9e0c90c75fb6ed038170561e@https://github.com/containerd/containerd/releases/download/v1.6.18/containerd-1.6.18-linux-amd64.tar.gz
+  - db772be63147a4e747b4fe286c7c16a2edc4a8458bd3092ea46aaee77750e8ce@https://github.com/opencontainers/runc/releases/download/v1.1.4/runc.amd64
+  - 57a79c27c71f3df165360fd1c30d49eebfcada433587fbed66e8e249b34eba99@https://artifacts.k8s.io/binaries/kops/1.26.2/linux/amd64/protokube,https://github.com/kubernetes/kops/releases/download/v1.26.2/protokube-linux-amd64
+  - ee89aedb6c2ea2fdd87a3da83c42f9b37db168e3954b98303d90dd353dedb6d8@https://artifacts.k8s.io/binaries/kops/1.26.2/linux/amd64/channels,https://github.com/kubernetes/kops/releases/download/v1.26.2/channels-linux-amd64
+  arm64:
+  - d360f919c279a05441b27178030c3d17134c1f257c95f4b22bdb28c2290993e7@https://storage.googleapis.com/kubernetes-release/release/v1.26.3/bin/linux/arm64/kubelet
+  - 0f62cbb6fafa109f235a08348d74499a57bb294c2a2e6ee34be1fa83432fec1d@https://storage.googleapis.com/kubernetes-release/release/v1.26.3/bin/linux/arm64/kubectl
+  - ef17764ffd6cdcb16d76401bac1db6acc050c9b088f1be5efa0e094ea3b01df0@https://storage.googleapis.com/k8s-artifacts-cni/release/v0.9.1/cni-plugins-linux-arm64-v0.9.1.tgz
+  - 56b83a0bc955edc5ebaa3bd0f788e654b63395be00fcb1bd03ff4bdfe4b5e1e7@https://github.com/containerd/containerd/releases/download/v1.6.18/containerd-1.6.18-linux-arm64.tar.gz
+  - dbb71e737eaef454a406ce21fd021bd8f1b35afb7635016745992bbd7c17a223@https://github.com/opencontainers/runc/releases/download/v1.1.4/runc.arm64
+  - cde9ecd8693c899f6cbefc72efc3b35e84d522d83c12370a012277243b5a10d2@https://artifacts.k8s.io/binaries/kops/1.26.2/linux/arm64/protokube,https://github.com/kubernetes/kops/releases/download/v1.26.2/protokube-linux-arm64
+  - e2e496a7025ab2b45334d05bdd9d633da2e87d181385fc1aa4daab18cce61ca0@https://artifacts.k8s.io/binaries/kops/1.26.2/linux/arm64/channels,https://github.com/kubernetes/kops/releases/download/v1.26.2/channels-linux-arm64
+CAs:
+  kubernetes-ca: |
+    -----BEGIN CERTIFICATE-----
+    MIIC+DCCAeCgAwIBAgIMF1S7/7K5S+QwAn2NMA0GCSqGSIb3DQEBCwUAMBgxFjAU
+    BgNVBAMTDWt1YmVybmV0ZXMtY2EwHhcNMjMwNDA5MDEwNzQ4WhcNMzMwNDA4MDEw
+    NzQ4WjAYMRYwFAYDVQQDEw1rdWJlcm5ldGVzLWNhMIIBIjANBgkqhkiG9w0BAQEF
+    AAOCAQ8AMIIBCgKCAQEA6ulDQJuNuXW9BMRQ8KGPJguswfg6bpVITSlsbxVhDX3S
+    rE5CN5FRTejNGlC12228AoEi14tdqzqU1MgobdOk2vaOrCvKzeSbCtYUC6vcQLHy
+    ecOZfPQZdgtaT2zhFcg/OvlRqxW6b/dVk94JRqoM8ZcFbIL2EW/It/IeEjFAhVlr
+    DpSuBgwmMwDKFFxvxvDrWEJLSFJFkiuRktUEAyzyoZR8KtdFC/6lC8qbDfguvAun
+    j3/+EsgZ7q81IcruaDyV7eMNxrpbqkkcNmF9HqpbT/rhajP93YwzY1XKz4BSg/N2
+    h+jYhDPo/rqnN2Dy61sxEa6AsLq4CXuUBPc2cxvP4QIDAQABo0IwQDAOBgNVHQ8B
+    Af8EBAMCAQYwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUFpBa3QNzYV9WiQwN
+    38+Vh5IkuOEwDQYJKoZIhvcNAQELBQADggEBALkIFEsHS7xvG2h7bFqePZmPYlA2
+    dCgFAytc6GgYAuyoagchskUA+yYxwDtId1Zj1KUWAcQKEcpvZlicTJIB4m9B28dS
+    vMlsVpwkq1rZlsNj42vxSL8ZxveFeO7wEIkHyRupBmqBt9tHCcr3ozyK96yoBk+3
+    aS6qke2zI08IPoPCiUrk40DY9y3UZcblTcwXZKq4YFCHwutOjkPjPtaGi9l94A/W
+    64VxzaRFCOc7yBzn+WIs5VuEV599QMlRE4akauFd9V/di8WVSGuKQXM9ANgbPeY5
+    WGCuHYg8A3UtyNTWT3if3OISUPFILTAUQIcSEoEencJ0NM2DeGdkfE3GxB0=
+    -----END CERTIFICATE-----
+ClusterName: easypay.k8s.local
+Hooks:
+- null
+- null
+KeypairIDs:
+  kubernetes-ca: "7220592794069008903808646541"
+KubeletConfig:
+  anonymousAuth: false
+  cgroupDriver: systemd
+  cgroupRoot: /
+  cloudProvider: external
+  clusterDNS: 100.64.0.10
+  clusterDomain: cluster.local
+  enableDebuggingHandlers: true
+  evictionHard: memory.available<100Mi,nodefs.available<10%,nodefs.inodesFree<5%,imagefs.available<10%,imagefs.inodesFree<5%
+  featureGates:
+    CSIMigrationAWS: "true"
+    InTreePluginAWSUnregister: "true"
+  kubeconfigPath: /var/lib/kubelet/kubeconfig
+  logLevel: 2
+  nodeLabels:
+    node-role.kubernetes.io/node: ""
+  podInfraContainerImage: registry.k8s.io/pause:3.6@sha256:3d380ca8864549e74af4b29c10f9cb0956236dfb01c40ca076fb6c37253234db
+  podManifestPath: /etc/kubernetes/manifests
+  protectKernelDefaults: true
+  registerSchedulable: true
+  resolvConf: /run/systemd/resolve/resolv.conf
+  shutdownGracePeriod: 30s
+  shutdownGracePeriodCriticalPods: 10s
+UpdatePolicy: automatic
+channels:
+- s3://easypay-k8s-io-state-store/easypay.k8s.local/addons/bootstrap-channel.yaml
+containerdConfig:
+  logLevel: info
+  runc:
+    version: 1.1.4
+  version: 1.6.18
+useInstanceIDForNodeName: true

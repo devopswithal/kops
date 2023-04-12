@@ -1,0 +1,17 @@
+{
+  "Statement": [
+    {
+      "Action": "sts:AssumeRoleWithWebIdentity",
+      "Condition": {
+        "StringEquals": {
+          "easypay-k8s-io-oidc-store.s3.us-east-1.amazonaws.com/easypay.k8s.local/discovery/easypay.k8s.local:sub": "system:serviceaccount:kube-system:aws-cloud-controller-manager"
+        }
+      },
+      "Effect": "Allow",
+      "Principal": {
+        "Federated": "arn:aws:iam::532895811159:oidc-provider/easypay-k8s-io-oidc-store.s3.us-east-1.amazonaws.com/easypay.k8s.local/discovery/easypay.k8s.local"
+      }
+    }
+  ],
+  "Version": "2012-10-17"
+}
